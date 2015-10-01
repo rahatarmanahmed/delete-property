@@ -1,0 +1,30 @@
+{
+  "name": "delete-property",
+  "description": "Deletes a deeply nested object property",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "Rahat Ahmed <rahatarmanahmed@gmail.com>",
+  "scripts": {
+    "lint": "eslint src/ test/",
+    "test": "mocha --compilers js:babel/register,es6:babel/register,es6.js:babel/register test/",
+    "build": "babel -d lib/ src/",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "watch": "onchange src/ -- npm run build && echo Done",
+    "dev": "npm run watch",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "chai": "^3.3.0",
+    "eslint": "^1.5.1",
+    "eslint-config-kellyirc": "^3.1.0",
+    "mocha": "^2.3.3",
+    "onchange": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.property": "^3.1.2"
+  }
+}
