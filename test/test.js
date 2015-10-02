@@ -76,4 +76,19 @@ describe('deleteProperty', () => {
         expect(deleteAA('god damn it')).to.be.false;
     });
 
+    it('should return false for properties higher up the prototype chain', () => {
+        let proto = { a: { a: 1 } };
+        obj = Object.create(proto);
+
+        // It'll work for nested properties higher up the chain
+        expect(obj.a.hasOwnProperty('a')).to.be.true;
+        let deleteAA = deleteProperty('a.a');
+        expect(deleteAA(obj)).to.be.true;
+
+        // But not for properties that aren't on the obj itself
+        expect(obj.hasOwnProperty('a')).to.be.false;
+        let deleteA = deleteProperty('a');
+        expect(deleteA(obj)).to.be.false;
+    });
+
 });

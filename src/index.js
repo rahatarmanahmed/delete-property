@@ -7,7 +7,7 @@ let deleteProperty = (property) => {
     if(lastDotIndex === -1) {
         return (obj) => {
             // Return false for non-objects or non-existent props
-            if(obj !== Object(obj) || !obj[property]) return false;
+            if(obj !== Object(obj) || !obj.hasOwnProperty(property)) return false;
             return delete obj[property];
         };
     }
