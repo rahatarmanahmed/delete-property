@@ -1,4 +1,4 @@
-# delete-property
+# delete-property [![Build Status](https://travis-ci.org/rahatarmanahmed/delete-property.svg?branch=master)](https://travis-ci.org/rahatarmanahmed/delete-property)
 Deletes a deeply nested object property. Returns true if successfully deleted. Returns false if property doesn't exist or if the passed in argument is not an object.
 
 ## Installing
