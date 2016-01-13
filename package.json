@@ -32,6 +32,6 @@
     "onchange": "^2.0.0"
   },
   "dependencies": {
-    "lodash.property": "^3.1.2"
+    "lodash.property": "^4.0.0"
   }
 }
