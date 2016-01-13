@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "lint": "eslint src/ test/",
-    "test": "mocha --compilers js:babel/register,es6:babel/register,es6.js:babel/register test/",
+    "test": "mocha --compilers js:babel-register,es6:babel-register,es6.js:babel-register test/",
     "build": "babel -d lib/ src/",
     "pretest": "npm run lint",
     "prebuild": "npm run test",
@@ -23,8 +23,10 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-eslint": "^4.1.3",
+    "babel-cli": "^6.4.0",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
     "chai": "^3.3.0",
     "eslint": "^1.5.1",
     "eslint-config-kellyirc": "^3.1.0",
