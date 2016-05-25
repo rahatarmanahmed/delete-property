@@ -1,7 +1,7 @@
 {
   "name": "delete-property",
   "description": "Deletes a deeply nested object property",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "main": "lib/index.js",
   "author": "Rahat Ahmed <rahatarmanahmed@gmail.com>",
