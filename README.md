@@ -1,5 +1,7 @@
 # DEPRECATED: Use [Lodash's unset method](https://lodash.com/docs#unset) instead
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rahatarmanahmed/delete-property.svg)](https://greenkeeper.io/)
+
 This module will still work but I will no longer maintain it since lodash implements it.
 
 # delete-property [![Build Status](https://travis-ci.org/rahatarmanahmed/delete-property.svg?branch=master)](https://travis-ci.org/rahatarmanahmed/delete-property)
